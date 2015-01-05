@@ -1,0 +1,16 @@
+<div class="container">
+
+<h3>Chi Town Crime Analysis</h3>
+
+	<% @homicides.each do |crime| %>
+<p><% @temp.each do |x| %></p>
+
+	<li><%= crime.primary_type  %></li>
+	<li><%= x %></li>
+	<li><%= parse_time(crime.date)  %></li>
+	<li><%= crime.description  %></li>
+
+	<% end %>
+	<% end %>
+
+</div>

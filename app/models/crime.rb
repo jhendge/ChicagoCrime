@@ -1,3 +1,3 @@
 class Crime < ActiveRecord::Base
-  # Remember to create a migration!
+  # Don't forget about the Crime migration...
 end

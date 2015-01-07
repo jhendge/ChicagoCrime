@@ -1,7 +1,3 @@
-
-# 1. Load recipes from a file X
-# 2. List all recipes
-# 3. Display a recipes name, description, and ingredients
 require 'csv'
 require 'forecast_io'
 
@@ -21,19 +17,6 @@ class Crime
     # current_weather = ForecastIO.forecast(41.87, -87.62)
     "#{id}. #{description}, #{date}, #{current_weather}"
   end
-
-  # def to_s
-  #   <<-STRING
-  # #{id} - #{name}
-  # #{description}
-
-  # Ingredients:
-  # #{ingredients}
-
-  # Preparation Instructions:
-  # #{directions}
-  #   STRING
-  # end
 end
 
 class Visualizing
@@ -57,23 +40,3 @@ class Visualizing
   end
 
 end
-
-
-# if ARGV.any?
-#   COMMAND = ARGV[0]
-#   ARGUMENT = ARGV[1]
-
-
-#   bistro = Visualizing.new
-#   bistro.load_crimes("test.csv")
-
-#   if COMMAND == "list"
-#     puts bistro.display_list
-#   elsif COMMAND == "display"
-#     puts bistro.find_recipe_by_id(ARGUMENT)
-#   end
-# end
-
-
-
-

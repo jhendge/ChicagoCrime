@@ -20,7 +20,7 @@ gem 'shotgun'
 
 gem 'forecast_io'
 
-group :test do
-  gem 'faker'
-  gem 'rspec'
-end
+# group :test do
+#   gem 'faker'
+#   gem 'rspec'
+# end
